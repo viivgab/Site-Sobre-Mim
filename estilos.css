@@ -8,7 +8,7 @@ body {
   font-family: "Ibarra Real Nova", serif;
   background-color: rgb(57, 77, 66);
 }
-.boringabtme, .ranking {
+.boringabtme, .ranking-container {
   background-color: rgb(57, 77, 66);
   color:rgb(238, 218, 190);
   width: 100%;
@@ -34,11 +34,170 @@ body {
   display: block;
 }
 
-.gaming {
-  display: block;
+.gaming-section {
+  margin-bottom: 80px;
+  padding: 60px 20px;
+  text-align: center;
+  width: 100%;
 }
 
-.showgame, .playlist {
+.hidden {
+  display: none !important;
+}
+
+#card-game {
+  background-color: rgb(57, 77, 66);
+  margin: 0 auto 80px auto;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 400px;
+  height: 85px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+#card-game.open {
+  width: 900px !important;
+  height: auto !important;
+  min-height: 500px !important;
+  display: block !important;
+  cursor: default;
+}
+
+#card-game.open .game-text {
+  opacity: 1 !important;
+  display: block !important;
+  width: 350px;
+  margin: 0 auto 20px auto;
+  visibility: visible;
+}
+
+#card-game.open .game-pic {
+  width: 350px !important;
+  height: auto !important;
+  border-radius: 20px;
+  display: block !important;
+  margin: 0 auto 20px auto !important;
+  opacity: 1 !important;
+}
+
+.layout-details {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#card-game.open .game-pic {
+    display: block !important;
+    width: 350px !important;
+    height: auto !important;
+    margin: 0 auto 20px auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.game-pic {
+  width: 350px !important;
+  height: auto !important;
+  border-radius: 20px;
+  display: block !important;
+  margin: 0 auto 20px auto !important;
+  opacity: 1 !important;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in;
+}
+
+#game-btn-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.game-text {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  font-size: 22px;
+  font-family: "Ibarra Real Nova", serif;
+  color: rgb(238, 218, 190);
+  text-align: left;
+  line-height: 30px;
+  flex-grow: 1;
+}
+
+.btn-expand {
+  background-color: transparent !important;
+  border: none;
+  font-family: "Ibarra Real Nova", serif;
+  color: rgb(238, 218, 190);
+  font-size: 35px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease;
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.btn-expand:hover {
+  background-color: rgb(31, 43, 36) !important;
+}
+
+.container-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.github, .linkedin {
+  display: inline-block;
+  margin: 0;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 40px;
+  background-color: rgb(238, 218, 190);
+  color: rgb(57, 77, 66);
+  border: none;
+  border-radius: 20px;
+}
+
+.github:hover, .linkedin:hover {
+  transition: background-color 0.3s ease;
+  background-color: rgb(189, 173, 151);
+  color: rgb(14, 29, 21);
+}
+
+.playlist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.link-playlist {
+  display: block;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.btn-playlist {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -54,7 +213,12 @@ body {
   color: rgb(238, 218, 190);
   border: none;
   border-radius: 20px;
+}
 
+.btn-playlist:hover {
+  transition: background-color 0.3s ease;
+  background-color: rgb(31, 43, 36);
+  color: rgb(238, 218, 190);
 }
 
 .myregards {
@@ -68,7 +232,7 @@ body {
   margin-bottom: 40px;
 }
 
-.title, .funnytitle, .gamemoment, .musicati, .rankingtitle, .boringpart, .funnypart, .generaldscrpt, .gamenews, .rankinglines {
+.title, .funnytitle, .gamemoment, .music-title, .rankingtitle, .galetitle, .boringpart, .funnypart, .generaldscrpt, .gamenews, .rankinglines {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -76,9 +240,10 @@ body {
   text-align: center;
 }
 
-.title, .funnytitle, .gamemoment, .musicati, .rankingtitle {
+.title, .funnytitle, .gamemoment, .music-title, .rankingtitle, .galetitle {
   font-size: 60px;
   padding-bottom: 30px;
+  font-weight: normal;
 }
 
 .boringpart, .funnypart, .gamenews {
@@ -89,11 +254,23 @@ body {
   line-height: 32px;
 }
 
+.myranking {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.myranking li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
 .rankinglines {
-  font-size: 30px;
-  font-weight:600;
-  text-align: center;
-  line-height: 80px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .rankimg {
@@ -105,4 +282,37 @@ body {
   object-fit: cover;
   border-radius: 20px !important;
   margin-bottom: 40px;
+}
+
+.gallery {
+  padding: 60px 20px;
+  background-color: rgb(238, 218, 190);
+  text-align: center;
+}
+
+.imggrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.galleryimg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.galleryimg:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .imggrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

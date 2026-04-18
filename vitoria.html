@@ -40,6 +40,15 @@
       processos que realizo atinjam os padrões de qualidade definidos nos procedimentos da empresa, que é algo de extrema relevância visto 
       que é uma empresa do ramo farmacêutico.
     </p>
+    <div class="container-botoes">
+    <button id="btn-github" class="github">
+      GitHub
+    </button>
+    <button id="btn-linkedin" class="linkedin">
+      LinkedIn
+    </button>
+    </div>
+  </div>
 
   <div class="funnyabtme">
     <div class="generaldscrpt">
@@ -53,100 +62,137 @@
     </p>
     </div>
 
-    <div class="gaming">
-    <p class="gamemoment">
-      Jogo do Momento
-    </p>
-    <button class="showgame">
-      Mostrar Jogo
-    </button>
-    <p class="gamenews">
-      Atualmente tenho jogado Minecraft! 
-      Em um servidor com meus irmãos e amigos próximos chamado "Vila da Floresta""
-      Modpack: All The Mods 10"
-      Tarefa mais recente: Construção das salas principais da nova casa que moro junto com a Lulu!
-    </p>
-    <img class="mineprint" src="">
-    </div>
+    <section class="gamingsection"><h2 class="funnytitle">Jogo do Momento</h2>
 
-    <div class="musicas">
-      <p class="musicati">
-        Música favorita do momento:
-      </p>
-      <img class="myregards" src="imagens\myregards.png">
-      <button class="playlist">
+      <div id="card-game" class="gaming">
+
+          <div id="game-btn-content">
+            <button class="btn-expand">Mostrar Jogo</button>
+          </div>
+
+          <div id="game-details" class="hidden">
+            <h3 class="game-title-card">Minecraft</h3>
+
+            <div class="layout-details">
+              <img src="imagens/print-mine.png" class="game-pic" alt="Print do Mine">
+
+              <div class="game-text">
+                <p>
+                  Atualmente tenho jogado Minecraft! Em um servidor com meus irmãos 
+                  e amigos próximos chamado "Vila da Floresta".
+                </p>
+                <ul>
+                  <li>Modpack: All The Mods 10</li>
+                  <li>Tarefa mais recente: Construção das salas principais da nova casa que moro junto com a Lulu!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="musics">
+      <h2 class="music-title">   Música favorita do momento: </h2>
+
+      <div class="playlist-container">
+        <img class="myregards" src="imagens/myregards.png">
+        <a href="https://open.spotify.com/playlist/37i9dQZF1EpyjveYZNaToi?si=e6473bb2057540d8" target="_blank" style="text-decoration: none; color: inherit;" class="link-playlist">
+        <button class="btn-playlist">
         On Repeat da Viiv
-      </button>
-    </div>
-    <div class="ranking">
+        </button>
+        </a>
+      </div>
+    </section>
+
+    <div class="ranking-container">
       <p class="rankingtitle">
         Rankeando Coisas 
       </p>
-      <div class="rankinglines">
-        <p class="rankpos">
-          #1 Batata Frita
-        </p>
-        <img class="rankimg" src="imagens\batatafrita.jpg">
-        <p class="rankpos">
-          #2 Sabrina Carpenter
-        </p>
-        <img class="rankimg" src="imagens\sabrinacarpenter.jpg">
-        <p class="rankpos">
-          #3 Pepsi (normal)
-        </p>
-        <img class="rankimg" src="imagens\pepsi.jpg">
-        <p class="rankpos">
-          #4 Dorama (por causa das histórias)
-        </p>
-        <img class="rankimg" src="imagens\dorama.jpg">
-        <p class="rankpos">
-          #5 Estudar Idiomas
-        </p>
-        <img class="rankimg" src="imagens\idiomas.jpg">
-        <p class="rankpos">
-          #6 Cantar em alto e bom som
-        </p>
-        <img class="rankimg" src="imagens\cantar.jpg">
-        <p class="rankpos">
-          #7 Roupas de Lã
-        </p>
-        <img class="rankimg" src="imagens\sueter.jpg">
-        <p class="rankpos">
-          #8 A Cor Rosa
-        </p>
-        <img class="rankimg" src="imagens\rosa.jpg">
-        <p class="rankpos">
-          #9 O show do Imagine Dragons que fui ano passado
-        </p>
-        <img class="rankimg" src="imagens\imaginedragons.jpeg">
-        <p class="rankpos">
-          #10 Meu Setup Gaymer
-        </p>
-        <img class="rankimg" src="imagens\setupgaymer.jpeg">
-      </div>
-      </div>
+      <ol class="myranking">
+        <li>
+          <span class="rankinglines"> #1 Batata Frita </span>
+          <img class="rankimg" src="imagens\batatafrita.jpg">
+        </li>
+        <li>
+          <span class="rankinglines"> #2 Sabrina Carpenter </span>
+          <img class="rankimg" src="imagens\sabrinacarpenter.jpg">
+        </li>
+        <li>
+          <span class="rankinglines"> #3 Pepsi (só que normal) </span>
+          <img class="rankimg" src="imagens\pepsi.jpg">
+        </li>
+        <li>
+          <span class="rankinglines"> #4 Dorama (por causa das histórias) </span>
+          <img class="rankimg" src="imagens\dorama.jpg">
+        </li>
+        <li>
+          <span class="rankinglines"> #5 Estudar Idiomas </span>
+          <img class="rankimg" src="imagens\idiomas.jpg">
+        </li>
+        <li>
+          <span class="rankinglines"> #6 Cantar em alto e bom som </span>
+          <img class="rankimg" src="imagens\cantar.jpg">>
+        </li>
+        <li>
+          <span class="rankinglines"> #7 Roupas de Lã </span>
+          <img class="rankimg" src="imagens\sueter.jpg">
+        </li>
+        <li>
+          <span class="rankinglines"> #8 A Cor Rosa </span>
+          <img class="rankimg" src="imagens\rosa.jpg">
+        </li>
+        <li>
+          <span class="rankinglines"> #9 O show do Imagine Dragons que fui ano passado </span>
+          <img class="rankimg" src="imagens\imaginedragons.jpeg">
+        </li>
+        <li>
+          <span class="rankinglines"> #10 Meu Setup Gaymer </span>
+          <img class="rankimg" src="imagens\setupgaymer.jpeg">
+        </li>
+      </ol>
     </div>
-    <div class="galery">
-      <p class="galetitle">
+    <section class="gallery">
+      <h2 class="galetitle">
         Imagens Favoritas do Momento
-      </p>
+      </h2>
       <div class="imggrid">
-        <img class="galleryimg" src="">
-        <img class="galleryimg" src="">
-        <img class="galleryimg" src="">
-        <img class="galleryimg" src="">
-        <img class="galleryimg" src="">
-        <img class="galleryimg" src="">
-        <img class="galleryimg" src="">
-        <img class="galleryimg" src="">
-        <img class="galleryimg" src="">
-        <img class="galleryimg" src="">
-        <img class="galleryimg" src="">
-        <img class="galleryimg" src="">
+        <a href="https://pin.it/4UCEXPHTm" target="_blank" class="galeryitem">
+          <img class="galleryimg" src="imagens\frankiero1.jpg">
+        </a>
+        <a href="https://pin.it/6yIxQ5T6I" target="_blank" class="galeryitem">
+          <img class="galleryimg" src="imagens\sonic.jpg">
+        </a>
+        <a href="https://pin.it/5DIxGLAH5" target="_blank" class="galeryitem">
+          <img class="galleryimg" src="imagens\badzmaru.jpg">
+        </a>
+        <a href="https://pin.it/59bgsJqye" target="_blank" class="galeryitem">
+          <img class="galleryimg" src="imagens\bolo.jpg">
+        </a>
+        <a href="https://pin.it/sBoiBkp76" target="_blank" class="galeryitem">
+          <img class="galleryimg" src="imagens\estilo1.jpg">
+        </a>
+        <a href="https://pin.it/45PlCr645" target="_blank" class="galeryitem">
+          <img class="galleryimg" src="imagens\yugioh.jpg">
+        </a>
+        <a href="https://pin.it/1IgwV5qhQ" target="_blank" class="galeryitem">
+          <img class="galleryimg" src="imagens\gravityfalls.jpg">
+        </a>
+        <a href="https://pin.it/2XKjOKY3p" target="_blank" class="galeryitem">
+          <img class="galleryimg" src="imagens\joji.jpg">
+        </a>
+        <a href="https://pin.it/2q5isoOPF" target="_blank" class="galeryitem">
+          <img class="galleryimg" src="imagens\sonic2.jpg">
+        </a>
+        <a href="pinterest" target="_blank" class="galeryitem">
+          <img class="galleryimg" src="">
+        </a>
+        <a href="pinterest" target="_blank" class="galeryitem">
+          <img class="galleryimg" src="">
+        </a>
+        <a href="pinterest" target="_blank" class="galeryitem">
+          <img class="galleryimg" src="">
+        </a>
       </div>
-    </div>
-  </div>
-
-
-  </div>
+    </section>
+  <script src="script.js"></script>
 </body>
