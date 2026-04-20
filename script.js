@@ -18,13 +18,13 @@ cardGame.addEventListener('click', function() {
     
     if (aberto) {
         // Esconde o botão e mostra o conteúdo NA FORÇA
-        btnExpandir.style.display = 'none';
-        expandirJogo.classList.remove('hidden');
-        expandirJogo.style.display = 'block';
+      btnParte.style.display = 'none';
+      detalhesParte.classList.remove('hidden');
+      detalhesParte.style.display = 'block';
     } else {
         // Volta ao normal ao fechar
-        btnExpandir.style.display = 'flex';
-        expandirJogo.classList.add('hidden');
-        expandirJogo.style.display = 'none';
+      btnParte.style.display = 'flex';
+      detalhesParte.classList.add('hidden');
+      detalhesParte.style.display = 'none';
     }
 });

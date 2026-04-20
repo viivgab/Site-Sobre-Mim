@@ -42,7 +42,7 @@ body {
 }
 
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 #card-game {
@@ -60,28 +60,33 @@ body {
 }
 
 #card-game.open {
-  width: 900px !important;
-  height: auto !important;
-  min-height: 500px !important;
-  display: block !important;
+  width: 1200px;
+  height: auto;
+  display: block;
   cursor: default;
 }
 
 #card-game.open .game-text {
-  opacity: 1 !important;
-  display: block !important;
-  width: 350px;
-  margin: 0 auto 20px auto;
+  opacity: 1;
+  display: block;
+  height: auto;
+  width: 400px;
+  margin-top: 0;
+  margin-right: 20px;
   visibility: visible;
 }
 
-#card-game.open .game-pic {
-  width: 350px !important;
-  height: auto !important;
-  border-radius: 20px;
-  display: block !important;
-  margin: 0 auto 20px auto !important;
-  opacity: 1 !important;
+#card-game.open .game-title-card {
+  opacity: 1;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  visibility: visible;
+  transition: opacity 0.5s ease-in;
+  font-weight: normal;
+  font-size: 60px;
+  flex-grow: 1;
+  color: rgb(238, 218, 190);
 }
 
 .layout-details {
@@ -94,21 +99,14 @@ body {
 }
 
 #card-game.open .game-pic {
-    display: block !important;
-    width: 350px !important;
-    height: auto !important;
-    margin: 0 auto 20px auto !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-.game-pic {
-  width: 350px !important;
-  height: auto !important;
+  display: block;
+  width: 550px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  opacity: 1;
+  visibility: visible;
   border-radius: 20px;
-  display: block !important;
-  margin: 0 auto 20px auto !important;
-  opacity: 1 !important;
   object-fit: cover;
   transition: opacity 0.5s ease-in;
 }
@@ -129,10 +127,11 @@ body {
   text-align: left;
   line-height: 30px;
   flex-grow: 1;
+  width: 400px;
 }
 
 .btn-expand {
-  background-color: transparent !important;
+  background-color: transparent;
   border: none;
   font-family: "Ibarra Real Nova", serif;
   color: rgb(238, 218, 190);
@@ -148,7 +147,7 @@ body {
 }
 
 .btn-expand:hover {
-  background-color: rgb(31, 43, 36) !important;
+  background-color: rgb(31, 43, 36);
 }
 
 .container-botoes {
@@ -228,11 +227,11 @@ body {
   width: 100%;
   max-width: 800px;
   object-fit: cover;
-  border-radius: 20px !important;
+  border-radius: 20px;
   margin-bottom: 40px;
 }
 
-.title, .funnytitle, .gamemoment, .music-title, .rankingtitle, .galetitle, .boringpart, .funnypart, .generaldscrpt, .gamenews, .rankinglines {
+.title, .funnytitle, .music-title, .rankingtitle, .galetitle, .boringpart, .funnypart, .generaldscrpt, .rankinglines {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -240,13 +239,13 @@ body {
   text-align: center;
 }
 
-.title, .funnytitle, .gamemoment, .music-title, .rankingtitle, .galetitle {
+.title, .funnytitle, .music-title, .rankingtitle, .galetitle {
   font-size: 60px;
   padding-bottom: 30px;
   font-weight: normal;
 }
 
-.boringpart, .funnypart, .gamenews {
+.boringpart, .funnypart {
   font-size: 20px;
   font-weight:600;
   text-align: justify;
@@ -280,7 +279,7 @@ body {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  border-radius: 20px !important;
+  border-radius: 20px;
   margin-bottom: 40px;
 }
 
